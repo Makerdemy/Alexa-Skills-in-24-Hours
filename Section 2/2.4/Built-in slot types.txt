@@ -1,0 +1,2 @@
+Built-in slot-types: 
+https://developer.amazon.com/en-US/docs/alexa/custom-skills/slot-type-reference.html

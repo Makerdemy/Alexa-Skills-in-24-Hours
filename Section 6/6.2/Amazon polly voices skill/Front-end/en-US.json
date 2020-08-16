@@ -1,0 +1,38 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "polly voices",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "VoiceIntent",
+                    "slots": [],
+                    "samples": [
+                        "what are the different types of voices you have",
+                        "what are the types of voices you have",
+                        "what are the types of voices",
+                        "what are the different voices",
+                        "what are the different types of voices",
+                        "What are the types of voices do you have"
+                    ]
+                }
+            ],
+            "types": []
+        }
+    }
+}

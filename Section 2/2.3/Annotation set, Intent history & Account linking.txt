@@ -1,0 +1,8 @@
+Annotation sets:
+https://developer.amazon.com/en-US/docs/alexa/custom-skills/batch-test-your-nlu-model.html
+
+Intent history:
+https://developer.amazon.com/en-US/docs/alexa/custom-skills/review-intent-history-devconsole.html
+
+Account Linking:
+https://developer.amazon.com/en-US/docs/alexa/account-linking/understand-account-linking.html

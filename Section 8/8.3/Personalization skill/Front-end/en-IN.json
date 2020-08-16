@@ -1,0 +1,35 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "find me",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "MyPersonalizationIntent",
+                    "slots": [],
+                    "samples": [
+                        "do you know my name",
+                        "find me if you can",
+                        "check personalization configuration "
+                    ]
+                }
+            ],
+            "types": []
+        }
+    }
+}

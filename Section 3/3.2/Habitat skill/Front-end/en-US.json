@@ -1,0 +1,243 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "hey whats up",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "NameIntent",
+                    "slots": [
+                        {
+                            "name": "name",
+                            "type": "AMAZON.US_FIRST_NAME"
+                        }
+                    ],
+                    "samples": [
+                        "my name is {name}",
+                        "i am {name}",
+                        "hi alexa my name is {name}",
+                        "{name}",
+                        "people call me {name}",
+                        "{name} is my name",
+                        "my good name is {name}"
+                    ]
+                },
+                {
+                    "name": "OccupationIntent",
+                    "slots": [
+                        {
+                            "name": "company",
+                            "type": "company"
+                        },
+                        {
+                            "name": "title",
+                            "type": "title"
+                        }
+                    ],
+                    "samples": [
+                        "i am working in {company} as {title}",
+                        "i am working as a {title} at {company}",
+                        "i am a {title} at {company}",
+                        "i work as {title} in {company}",
+                        "i am working in {company} a {title}",
+                        "i am working in {company} as an {title}",
+                        "i am working as an {title} at {company}",
+                        "i am working as an {title} in {company}",
+                        "i am working as a {title} in {company}",
+                        "i work at {company} as {title}"
+                    ]
+                },
+                {
+                    "name": "HomeIntent",
+                    "slots": [
+                        {
+                            "name": "city",
+                            "type": "AMAZON.US_CITY"
+                        }
+                    ],
+                    "samples": [
+                        "i live at {city}",
+                        "my home is at {city}",
+                        "I live in {city}"
+                    ]
+                },
+                {
+                    "name": "AMAZON.RepeatIntent",
+                    "samples": []
+                }
+            ],
+            "types": [
+                {
+                    "name": "company",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "makerdemy"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "netflix"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "google"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "apple"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "capgemini"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "microsoft"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "oracle corporation"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "IBM"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "wipro"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "hewlett packard"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "infosys"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "hp"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "amazon"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "hcl"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "title",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "ceo"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "software enginner"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "mechanical engineer"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "civil engineer"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "architect"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "engineer"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "marketing manager"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "senior product manager"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "chairman"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "managing director"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "executive director"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "executive vice president"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "chief operating officer"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "intern"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "product manager"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

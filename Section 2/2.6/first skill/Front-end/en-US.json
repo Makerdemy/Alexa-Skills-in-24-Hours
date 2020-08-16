@@ -1,0 +1,102 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "first skill",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "NameIntent",
+                    "slots": [
+                        {
+                            "name": "name",
+                            "type": "AMAZON.US_FIRST_NAME"
+                        }
+                    ],
+                    "samples": [
+                        "{name}",
+                        "i am {name}",
+                        "{name} is my name",
+                        "my name is {name}"
+                    ]
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "IceCreamIntent",
+                    "slots": [
+                        {
+                            "name": "flavor",
+                            "type": "flavor"
+                        }
+                    ],
+                    "samples": [
+                        "{flavor} is my favorite",
+                        "my favorite flavor is {flavor}",
+                        "i love {flavor}",
+                        "{flavor} is my favorite flavor"
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "flavor",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "hazelnut"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "blueberry"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "butterscotch"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "caramel"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "chocolate"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "raspberry"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "vanilla"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "strawberry"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

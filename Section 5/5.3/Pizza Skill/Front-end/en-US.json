@@ -1,0 +1,285 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "make my own",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "NameIntent",
+                    "slots": [
+                        {
+                            "name": "name",
+                            "type": "AMAZON.US_FIRST_NAME"
+                        }
+                    ],
+                    "samples": [
+                        "i am {name} ",
+                        "My name is {name}",
+                        "this is {name} here",
+                        "this is {name}",
+                        "{name} is my name"
+                    ]
+                },
+                {
+                    "name": "SizeIntent",
+                    "slots": [
+                        {
+                            "name": "size",
+                            "type": "size"
+                        }
+                    ],
+                    "samples": [
+                        "i want {size} pizza",
+                        "i want an {size} pizza",
+                        "i think i want {size} pizza",
+                        "I would like a {size} pizza"
+                    ]
+                },
+                {
+                    "name": "BaseIntent",
+                    "slots": [
+                        {
+                            "name": "base",
+                            "type": "base"
+                        }
+                    ],
+                    "samples": [
+                        "I want {base}",
+                        "{base}",
+                        "i want the base to be {base} "
+                    ]
+                },
+                {
+                    "name": "CheeseIntent",
+                    "slots": [
+                        {
+                            "name": "cheese",
+                            "type": "cheese"
+                        }
+                    ],
+                    "samples": [
+                        "I pick {cheese}",
+                        "top it with {cheese}",
+                        "I would like to have {cheese}"
+                    ]
+                },
+                {
+                    "name": "VeggiesIntent",
+                    "slots": [
+                        {
+                            "name": "veggies",
+                            "type": "veggies"
+                        }
+                    ],
+                    "samples": [
+                        "put {veggies}",
+                        "give me {veggies}",
+                        "I choose {veggies}"
+                    ]
+                },
+                {
+                    "name": "MaintoppingsIntent",
+                    "slots": [
+                        {
+                            "name": "maintoppings",
+                            "type": "maintopping"
+                        }
+                    ],
+                    "samples": [
+                        "give me {maintoppings}",
+                        "I need {maintoppings}",
+                        "i want {maintoppings} for main toppings",
+                        "for main toppings i want {maintoppings}"
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "size",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "eight inches"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "twelve inches"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "sixteen inches"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "twenty two inches"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "base",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "cheese stuffed"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "normal base"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "pan base"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "flat bread"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "thin crust"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "cheese",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "chipotle"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "cheddar cheese"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "mexican cheese"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "parmesan "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "mozarella"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "veggies",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "green pepper"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "onions"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "tomatoes"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "bell pepper"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "jalapeno"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "black olives"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "chilli flakes"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "red chillies"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "maintopping",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "bacon"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "chicken ham"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "chicken tikka"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "mushroom"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "paneer"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "pepperoni"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "sausage"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

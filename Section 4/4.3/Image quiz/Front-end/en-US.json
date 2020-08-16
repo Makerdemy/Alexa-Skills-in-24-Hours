@@ -1,0 +1,75 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "animal image quiz",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "NameIntent",
+                    "slots": [
+                        {
+                            "name": "name",
+                            "type": "AMAZON.US_FIRST_NAME"
+                        }
+                    ],
+                    "samples": [
+                        "i am {name}",
+                        "{name} is my name ",
+                        "my name is {name}"
+                    ]
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "QuestionIntent",
+                    "slots": [],
+                    "samples": [
+                        "start the quiz",
+                        "play again",
+                        "start",
+                        "next question",
+                        "next please",
+                        "next ",
+                        "next question please"
+                    ]
+                },
+                {
+                    "name": "AnswerIntent",
+                    "slots": [
+                        {
+                            "name": "animal",
+                            "type": "AMAZON.Animal"
+                        }
+                    ],
+                    "samples": [
+                        "i think it is {animal}",
+                        "{animal}",
+                        "is it {animal}"
+                    ]
+                },
+                {
+                    "name": "AMAZON.YesIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NoIntent",
+                    "samples": []
+                }
+            ],
+            "types": []
+        }
+    }
+}

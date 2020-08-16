@@ -1,0 +1,106 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "my horoscope",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "HoroscopeIntent",
+                    "slots": [
+                        {
+                            "name": "zodiac",
+                            "type": "zodiac"
+                        }
+                    ],
+                    "samples": [
+                        "{zodiac}",
+                        "{zodiac} is my zodiac sign",
+                        "my zodiac sign is {zodiac}"
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "zodiac",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "gemini"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "aries"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "virgo"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "taurus"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "leo"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "libra"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "aquarius"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "sagittarius"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "pisces"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "capricorn"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "cancer"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "scorpio"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

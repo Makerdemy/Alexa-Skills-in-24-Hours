@@ -1,0 +1,95 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "happy or sad",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "DayIntent",
+                    "slots": [
+                        {
+                            "name": "experience",
+                            "type": "day"
+                        }
+                    ],
+                    "samples": [
+                        "my day was {experience}",
+                        "i had an {experience} day",
+                        "it was an {experience} day",
+                        "it was a {experience} day",
+                        "i had a {experience} day"
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "day",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "bad",
+                                "synonyms": [
+                                    "horrible",
+                                    "hectic",
+                                    "not so good",
+                                    "tiring",
+                                    "not got at all",
+                                    "worst",
+                                    "bad one",
+                                    "unfortunate",
+                                    "unpleasent",
+                                    "dreadful",
+                                    "awful",
+                                    "terrible",
+                                    "boring",
+                                    "so bad",
+                                    "below average"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "good",
+                                "synonyms": [
+                                    "amazing",
+                                    "wonderful",
+                                    "fantastic",
+                                    "splendid",
+                                    "awesome",
+                                    "best",
+                                    "pleasent",
+                                    "nice",
+                                    "top notch",
+                                    "good one",
+                                    "pretty good",
+                                    "terrific",
+                                    "too good",
+                                    "so good",
+                                    "much better",
+                                    "decent",
+                                    "superb",
+                                    "excellent"
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

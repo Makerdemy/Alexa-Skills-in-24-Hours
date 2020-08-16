@@ -1,0 +1,2 @@
+Standard Built-in Intents: 
+https://developer.amazon.com/en-US/docs/alexa/custom-skills/standard-built-in-intents.html

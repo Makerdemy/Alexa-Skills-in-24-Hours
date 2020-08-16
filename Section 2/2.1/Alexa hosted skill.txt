@@ -1,0 +1,2 @@
+Alexa-Hosted skill:
+https://developer.amazon.com/en-US/docs/alexa/hosted-skills/build-a-skill-end-to-end-using-an-alexa-hosted-skill.html

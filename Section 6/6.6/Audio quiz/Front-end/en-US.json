@@ -1,0 +1,83 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "animal sounds quiz",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "NameIntent",
+                    "slots": [
+                        {
+                            "name": "name",
+                            "type": "AMAZON.US_FIRST_NAME"
+                        }
+                    ],
+                    "samples": [
+                        "{name} is my name",
+                        "i am {name}",
+                        "my name is {name}"
+                    ]
+                },
+                {
+                    "name": "QuestionIntent",
+                    "slots": [],
+                    "samples": [
+                        "start the quiz",
+                        "next question",
+                        "lets begin",
+                        "play again",
+                        "next one",
+                        "next please",
+                        "next",
+                        "let's begin",
+                        "start"
+                    ]
+                },
+                {
+                    "name": "AnswerIntent",
+                    "slots": [
+                        {
+                            "name": "animal",
+                            "type": "AMAZON.Animal"
+                        }
+                    ],
+                    "samples": [
+                        "{animal}",
+                        "is it {animal}",
+                        "i think it is {animal}",
+                        "an {animal}",
+                        "a {animal}",
+                        "i think it is an {animal}",
+                        "it is an {animal}",
+                        "is it an {animal}",
+                        "it is {animal}"
+                    ]
+                },
+                {
+                    "name": "AMAZON.YesIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NoIntent",
+                    "samples": []
+                }
+            ],
+            "types": []
+        }
+    }
+}

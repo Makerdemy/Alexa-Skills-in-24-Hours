@@ -1,0 +1,2 @@
+SSML documentation:
+https://developer.amazon.com/en-US/docs/alexa/custom-skills/speech-synthesis-markup-language-ssml-reference.html

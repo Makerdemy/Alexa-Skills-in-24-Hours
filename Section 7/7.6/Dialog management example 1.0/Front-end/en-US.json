@@ -1,0 +1,320 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "dialog management test",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "CategoryIntent",
+                    "slots": [
+                        {
+                            "name": "category",
+                            "type": "category",
+                            "samples": [
+                                "suggest me a {category}",
+                                "{category}",
+                                "a {category}"
+                            ]
+                        },
+                        {
+                            "name": "genre",
+                            "type": "genre",
+                            "samples": [
+                                "{genre}",
+                                "a {genre} song",
+                                "a {genre} film",
+                                "{genre} song",
+                                "an {genre} film",
+                                "{genre} film",
+                                "{genre} movie",
+                                "an {genre} song",
+                                "i'd like an {genre} song",
+                                "i'd like an {genre} movie",
+                                "an {genre} movie"
+                            ]
+                        }
+                    ],
+                    "samples": [
+                        "suggest me",
+                        "find me a {category}",
+                        "fine me a {genre} {category} ",
+                        "suggest a {category} ",
+                        "fine me an {genre} {category} ",
+                        "suggest me a {category} ",
+                        "i want to listen to a {genre} {category}",
+                        "I want to watch {genre} {category}",
+                        "suggeast a {genre} {category}",
+                        "suggest {genre} {category} "
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "category",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "songs",
+                                "synonyms": [
+                                    "song",
+                                    "music",
+                                    "track"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "movie",
+                                "synonyms": [
+                                    "film",
+                                    "movies"
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "genre",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "action",
+                                "synonyms": [
+                                    "fighting"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "thriller",
+                                "synonyms": [
+                                    "horror",
+                                    "scary",
+                                    "psychological thriller",
+                                    "suspense"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "adventure"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "romance",
+                                "synonyms": [
+                                    "romantic",
+                                    "love"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "drama"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "jazz"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "pop"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "rock"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "trance"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "comedy"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "sci-fi",
+                                "synonyms": [
+                                    "science fiction"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "rap"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "fantasy"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "documentary"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "dialog": {
+            "intents": [
+                {
+                    "name": "CategoryIntent",
+                    "delegationStrategy": "ALWAYS",
+                    "confirmationRequired": true,
+                    "prompts": {
+                        "confirmation": "Confirm.Intent.1146500502800"
+                    },
+                    "slots": [
+                        {
+                            "name": "category",
+                            "type": "category",
+                            "confirmationRequired": true,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "confirmation": "Confirm.Slot.686226013715.1589499900797",
+                                "elicitation": "Elicit.Slot.451279511487.717699790502"
+                            },
+                            "validations": [
+                                {
+                                    "type": "isNotInSet",
+                                    "prompt": "Slot.Validation.1146500502800.1546889295026.846001461792",
+                                    "values": [
+                                        "tv shows",
+                                        "restaurant",
+                                        "tv show"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "genre",
+                            "type": "genre",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.471690738104.1536781656443"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "delegationStrategy": "ALWAYS"
+        },
+        "prompts": [
+            {
+                "id": "Elicit.Slot.451279511487.1245854042053",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "what kind of {category}"
+                    },
+                    {
+                        "type": "PlainText",
+                        "value": "What genre?"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.451279511487.717699790502",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "what kind of movie or song would you like"
+                    },
+                    {
+                        "type": "PlainText",
+                        "value": "you can ask me for a movie or song suggestion"
+                    },
+                    {
+                        "type": "PlainText",
+                        "value": "You can ask me to suggest a movie or song"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.637276623558.956721849843",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "what kind of {category}"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.471690738104.1536781656443",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "what genre of {category} would you like?"
+                    },
+                    {
+                        "type": "PlainText",
+                        "value": "what genre?"
+                    }
+                ]
+            },
+            {
+                "id": "Confirm.Slot.471690738104.624520321250",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "you said {category} . correct?"
+                    }
+                ]
+            },
+            {
+                "id": "Confirm.Slot.686226013715.1589499900797",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "i heard {category} , is that correct?"
+                    }
+                ]
+            },
+            {
+                "id": "Slot.Validation.1146500502800.1546889295026.846001461792",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "i can only suggest movies or songs"
+                    }
+                ]
+            },
+            {
+                "id": "Confirm.Intent.1146500502800",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "i have a good list of {genre} {category} suggestions. Do you want one?"
+                    }
+                ]
+            }
+        ]
+    }
+}

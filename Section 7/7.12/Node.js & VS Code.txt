@@ -1,0 +1,5 @@
+Node js:
+https://nodejs.org/en/download/
+
+VS code:
+https://code.visualstudio.com/download

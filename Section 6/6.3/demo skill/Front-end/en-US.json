@@ -1,0 +1,49 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "demonstrate to me",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "EmotionsIntent",
+                    "slots": [],
+                    "samples": [
+                        "show me your emotions",
+                        "tell about the effect and emotion tag",
+                        "effects and emotion",
+                        "tell about the effects and emotion tags",
+                        "tell me about effect and emotion",
+                        "tell me about effects and emotions",
+                        "tell me about effects and emotion"
+                    ]
+                },
+                {
+                    "name": "DomainIntent",
+                    "slots": [],
+                    "samples": [
+                        "explain about domain tags",
+                        "please explain to me about domain tags",
+                        "tell about domain tags",
+                        "domain tags"
+                    ]
+                }
+            ],
+            "types": []
+        }
+    }
+}

@@ -1,0 +1,148 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "happy or sad",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "DayIntent",
+                    "slots": [
+                        {
+                            "name": "experience",
+                            "type": "day"
+                        }
+                    ],
+                    "samples": [
+                        "my day was {experience}",
+                        "i had an {experience} day",
+                        "it was an {experience} day",
+                        "it was a {experience} day",
+                        "i had a {experience} day"
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "day",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "awful"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "not good"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "terrific"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "nice"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "superb"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "tiring"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "too bad"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "worst"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "horrible"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "fantastic"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "excellent"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "amazing"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "splendid"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "wonderful"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "awesome"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "hectic"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "unpleasant"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "boring"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "bad"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "good"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

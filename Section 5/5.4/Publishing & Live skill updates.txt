@@ -1,0 +1,6 @@
+Test and submit your skill for publishing: 
+https://developer.amazon.com/en-US/docs/alexa/devconsole/test-and-submit-your-skill.html
+
+Live Skill updates: 
+https://developer.amazon.com/en-US/docs/alexa/devconsole/about-the-developer-console.html#update-live-skill
+

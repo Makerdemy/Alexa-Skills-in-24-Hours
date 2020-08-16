@@ -1,0 +1,8 @@
+Include cards in your skills:
+https://developer.amazon.com/en-US/docs/alexa/custom-skills/include-a-card-in-your-skills-response.html
+
+Best practices for skill card design:
+https://developer.amazon.com/en-US/docs/alexa/custom-skills/best-practices-for-skill-card-design.html
+
+Tips for using cards in your skills:
+https://developer.amazon.com/blogs/alexa/post/90b0ea16-a8e8-45ae-abcb-734d33189ee2/tips-for-using-cards-with-your-alexa-skill

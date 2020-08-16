@@ -1,0 +1,507 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "build my own pizza",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "OrderIntent",
+                    "slots": [
+                        {
+                            "name": "name",
+                            "type": "AMAZON.US_FIRST_NAME"
+                        },
+                        {
+                            "name": "size",
+                            "type": "size",
+                            "samples": [
+                                "i want {size} pizza",
+                                "i want a {size} {base} pizza",
+                                "i want a {size} {base} {maintopping} topped with {veggies}",
+                                "i want a {size} {base} {maintopping} pizza",
+                                "i want a {size} {base}",
+                                "i want an {size} {base} {maintopping} topped with {veggies}",
+                                "i want an {size} {base} {maintopping} pizza",
+                                "i want an {size} {base} pizza",
+                                "i want an {size} {base}",
+                                "i think i want {size}",
+                                "{size}",
+                                "i want an {size} pizza",
+                                "i would like {size}"
+                            ]
+                        },
+                        {
+                            "name": "base",
+                            "type": "base",
+                            "samples": [
+                                "{base}",
+                                "i need {base}",
+                                "i want {base}",
+                                "i want {base} pizza with {cheese}",
+                                "i want {base} pizza with {cheese} and {maintopping}",
+                                "i think i want {base}",
+                                "i would like {base}"
+                            ]
+                        },
+                        {
+                            "name": "cheese",
+                            "type": "cheese",
+                            "samples": [
+                                "i want {cheese} cheese",
+                                "{cheese}",
+                                "i think i want {cheese}",
+                                "i would like {cheese}",
+                                "i want {cheese}"
+                            ]
+                        },
+                        {
+                            "name": "veggies",
+                            "type": "veggies",
+                            "samples": [
+                                "i want {veggies}",
+                                "{veggies}",
+                                "i think i want {veggies}",
+                                "i need {veggies}",
+                                "i would like {veggies}"
+                            ]
+                        },
+                        {
+                            "name": "maintopping",
+                            "type": "maintopping",
+                            "samples": [
+                                "i think i want {maintopping}",
+                                "{maintopping}",
+                                "i want {maintopping}",
+                                "i need {maintopping}",
+                                "i would like {maintopping}"
+                            ]
+                        }
+                    ],
+                    "samples": [
+                        "i want {size} pizza",
+                        "i want {size} {base} pizza",
+                        "i want {size} {base} pizza with {cheese}",
+                        "I want a {size} {base} pizza topped with {maintopping}",
+                        "I want a {size} {base} pizza with {cheese} topped with {maintopping} and {veggies}",
+                        "My name is {name} I want a {size} {base} pizza with {cheese} topped with {maintopping} and {veggies}",
+                        "{size}",
+                        "i want an {size} {base} pizza",
+                        "i want a {size} {base} pizza with {cheese} cheese",
+                        "i want a {size} {base} pizza with {cheese}",
+                        "i want a {size} pizza",
+                        "i want {maintopping}",
+                        "i want a {base} pizza",
+                        "i want {cheese} cheese",
+                        "i want {cheese} cheese pizza",
+                        "i want an {size} pizza",
+                        "{name} is my name",
+                        "i am {name}",
+                        "i want {size} {maintopping} pizza",
+                        "my name is {name} i want a {size} {base} pizza",
+                        "my name is {name} i want a {size} pizza",
+                        "my name is {name}",
+                        "i want a {size}"
+                    ]
+                },
+                {
+                    "name": "AMAZON.YesIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NoIntent",
+                    "samples": []
+                }
+            ],
+            "types": [
+                {
+                    "name": "size",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "twenty two inches",
+                                "synonyms": [
+                                    "twenty two inch"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "sixteen inches",
+                                "synonyms": [
+                                    "sixteen inch"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "twelve inches",
+                                "synonyms": [
+                                    "twelve inch"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "eight inches",
+                                "synonyms": [
+                                    "eight inch"
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "base",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "thin crust",
+                                "synonyms": [
+                                    "cheese stuffed base"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "cheese stuffed "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "pan base"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "flat bread",
+                                "synonyms": [
+                                    "flat bread base"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "normal base",
+                                "synonyms": [
+                                    "thin crust base"
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "cheese",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "chipotle",
+                                "synonyms": [
+                                    "chipotle cheese"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "cheddar ",
+                                "synonyms": [
+                                    "cheddar cheese"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "mexican cheese",
+                                "synonyms": [
+                                    "mexican"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "parmesan",
+                                "synonyms": [
+                                    "parmeson"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "mozarella"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "veggies",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "green pepper"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "chilli flakes"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "red chillies"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "bell pepper"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "jalapeno"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "black olives"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "onions",
+                                "synonyms": [
+                                    "onion"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "tomatos",
+                                "synonyms": [
+                                    "tomato"
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "maintopping",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "bacon"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "chicken ham"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "chicken tikka"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "mushroom"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "paneer"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "pepperoni"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "sausage"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "dialog": {
+            "intents": [
+                {
+                    "name": "OrderIntent",
+                    "delegationStrategy": "ALWAYS",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": [
+                        {
+                            "name": "name",
+                            "type": "AMAZON.US_FIRST_NAME",
+                            "confirmationRequired": false,
+                            "elicitationRequired": false,
+                            "prompts": {}
+                        },
+                        {
+                            "name": "size",
+                            "type": "size",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.427570826008.804540768915"
+                            }
+                        },
+                        {
+                            "name": "base",
+                            "type": "base",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.781479462982.205771593872"
+                            }
+                        },
+                        {
+                            "name": "cheese",
+                            "type": "cheese",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.781479462982.1523028576555"
+                            }
+                        },
+                        {
+                            "name": "veggies",
+                            "type": "veggies",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.781479462982.663905832313"
+                            }
+                        },
+                        {
+                            "name": "maintopping",
+                            "type": "maintopping",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.781479462982.432486851313"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "delegationStrategy": "ALWAYS"
+        },
+        "prompts": [
+            {
+                "id": "Elicit.Slot.781479462982.205771593872",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Which one would you like thin crust, flat bread,  pan base, cheese stuffed and normal base available. "
+                    },
+                    {
+                        "type": "PlainText",
+                        "value": "We got thin crust, flat bread,  pan base, cheese stuffed and normal base available. Which one would you like?"
+                    },
+                    {
+                        "type": "PlainText",
+                        "value": "We have thin crust, flat bread,  pan base, cheese stuffed and normal base available. Pick one"
+                    },
+                    {
+                        "type": "PlainText",
+                        "value": "We have thin crust, flat bread,  pan base, cheese stuffed and normal base available. Which one would you prefer?"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.781479462982.1523028576555",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "What about the cheese. We have mozarella, parmesan, chipotle, cheddar and mexican cheese"
+                    },
+                    {
+                        "type": "PlainText",
+                        "value": "A {size} {base} huh, nice. On cheese, we have mozarella, cheddar, parmesan, chipotle and mexican cheese."
+                    },
+                    {
+                        "type": "PlainText",
+                        "value": "{base} nice. We got  mozarella, parmesan, cheddar, chipotle and mexican cheese. Choose one"
+                    },
+                    {
+                        "type": "PlainText",
+                        "value": "We have mozarella, parmesan, chipotle, cheddar, and mexican cheese. Which one would you like?"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.781479462982.663905832313",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "We have black olives, green pepper, chilli flakes, bell pepper, red chillies, jalapeno, onion and tomato. Choose one"
+                    },
+                    {
+                        "type": "PlainText",
+                        "value": "for veggies we have black olives, bell pepper, green pepper, chilli flakes,  red chillies, jalapeno, onion and tomato. Please choose a suitable veggie for  {maintopping}"
+                    },
+                    {
+                        "type": "PlainText",
+                        "value": "{cheese} with {maintopping} sounds perfect. Choose a veggie you would like to have along with it. We have black olives, green pepper, bell pepper, chilli flakes, red chillies, jalapeno, onion and tomato"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.781479462982.432486851313",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Alright for main toppings we got Chicken sausage, chicken tikka, pepperoni, paneer, mushroom, chicken ham and bacon. Choose one"
+                    },
+                    {
+                        "type": "PlainText",
+                        "value": "Alright for main toppings we got Chicken sausage, chicken tikka, pepperoni, paneer, mushroom, chicken ham and bacon. You may select one"
+                    },
+                    {
+                        "type": "PlainText",
+                        "value": "Alright, for main toppings we have Chicken sausage, chicken tikka, pepperoni, paneer,  mushroom, chicken ham and bacon. Pick one"
+                    },
+                    {
+                        "type": "PlainText",
+                        "value": "For main toppings, we have Chicken sausage, chicken tikka, pepperoni, paneer, mushroom, chicken ham and bacon. You may select one"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.427570826008.804540768915",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Hi {name} , We got eight inch, twelve inch, sixteen inch and twenty two inch pizzas available. Pick one"
+                    },
+                    {
+                        "type": "PlainText",
+                        "value": "Hi {name} , We got eight inch, twelve inch, sixteen inch and twenty two inch pizzas available. Which one would you like?"
+                    },
+                    {
+                        "type": "PlainText",
+                        "value": "Hi {name} , We have eight inch, twelve inch, sixteen inch and twenty two inch pizzas available. Which one would you like?"
+                    }
+                ]
+            }
+        ]
+    }
+}
