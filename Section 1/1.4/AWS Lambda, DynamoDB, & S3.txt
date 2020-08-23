@@ -1,0 +1,5 @@
+AWS Lambda: https://aws.amazon.com/lambda/
+
+DynamoDB: https://aws.amazon.com/dynamodb/
+
+Amazon S3: https://aws.amazon.com/s3/

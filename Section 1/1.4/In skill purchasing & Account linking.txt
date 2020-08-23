@@ -1,0 +1,5 @@
+In-Skill-Purchasing: 
+https://developer.amazon.com/en-US/docs/alexa/in-skill-purchase/isp-overview.html
+
+Account Linking: 
+https://developer.amazon.com/en-US/docs/alexa/account-linking/understand-account-linking.html

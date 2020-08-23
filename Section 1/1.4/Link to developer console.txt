@@ -1,0 +1,3 @@
+Link to developer console: https://developer.amazon.com/
+
+Link to AWS console: https://aws.amazon.com/
