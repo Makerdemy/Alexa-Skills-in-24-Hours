@@ -1,9 +1,0 @@
-ASK Documentation - https://developer.amazon.com/en-US/docs/alexa/ask-overviews/build-skills-with-the-alexa-skills-kit.html
-
-Understand how user interact with skills - https://developer.amazon.com/en-US/docs/alexa/ask-overviews/understanding-how-users-interact-with-skills.html
-
-Requirements to build a skill - https://developer.amazon.com/en-US/docs/alexa/ask-overviews/requirements-to-build-a-skill.html
-
-Glossary - https://developer.amazon.com/en-US/docs/alexa/ask-overviews/alexa-skills-kit-glossary.html
-
-Alexa Design Guide - https://developer.amazon.com/en-US/docs/alexa/alexa-design/get-started.html
